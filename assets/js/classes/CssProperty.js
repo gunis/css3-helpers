@@ -10,10 +10,13 @@ function CssProperty (childObject, name, value) {
 		webkit : '-webkit-'
 	};
 
-	this.render = function() {
+	this.getDefinition = function() {
+		var definition = '';
 		for (var index = 0, len = _cssProperty.child.prefixes.length; index < len; ++index) {
-			console.log(_cssProperty.child.prefixes[index]);
+			definition += _cssProperty.child.prefixes[index] + _cssProperty.name + ': ' + _cssProperty.name + ';\n';
 		}
+
+		return definition;
 	};
 
 	this.init = function() {

@@ -43,9 +43,7 @@
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
-					<pre>border-radius: 4px;
--moz-border-radius: 4px;
--webkit-border-radius: 4px;</pre>
+					<pre id="border-radius-definition"></pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">4</sub>
 						<i class="fa fa-chrome fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">6</sub>
@@ -68,9 +66,7 @@
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
-					<pre>box-shadow: 1px 4px 14px #878787;
--moz-box-shadow: 1px 4px 14px #878787;
--webkit-box-shadow: 1px 4px 14px #878787;</pre>
+					<pre id="box-shadow-definition"></pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">4</sub>
 						<i class="fa fa-chrome fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">4</sub>
@@ -93,9 +89,7 @@
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
-					<pre>box-sizing: border-box;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;</pre>
+					<pre id="box-sizing-definition"></pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">2</sub>
 						<i class="fa fa-chrome fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">4</sub>
@@ -233,10 +227,18 @@ outline-offset: 1px;</pre>
 
 	<script src="assets/js/classes/CssProperty.js"></script>
 	<script src="assets/js/classes/BorderRadius.js"></script>
+	<script src="assets/js/classes/BoxShadow.js"></script>
+	<script src="assets/js/classes/BoxSizing.js"></script>
 
 	<script>
 		var borderRadius = new BorderRadius('4px 4px 4px 4px');
-		borderRadius.render();
+		$('#border-radius-definition').text(borderRadius.getDefinition());
+
+		var boxShadow = new BoxShadow('1px 4px 14px #878787');
+		$('#box-shadow-definition').text(boxShadow.getDefinition());
+
+		var boxSizing = new BoxSizing('border-box');
+		$('#box-sizing-definition').text(boxSizing.getDefinition());
 	</script>
   </body>
 </html>
