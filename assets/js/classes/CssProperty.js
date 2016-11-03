@@ -13,7 +13,7 @@ function CssProperty (childObject, name, value) {
 	this.getDefinition = function() {
 		var definition = '';
 		for (var index = 0, len = _cssProperty.child.prefixes.length; index < len; ++index) {
-			definition += _cssProperty.child.prefixes[index] + _cssProperty.name + ': ' + _cssProperty.name + ';\n';
+			definition += _cssProperty.child.prefixes[index] + _cssProperty.name + ': ' + _cssProperty.value + ';\n';
 		}
 
 		return definition;

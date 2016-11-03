@@ -13,6 +13,9 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
 	<link rel="shortcut icon" href="assets/ico/favicon.ico">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +38,7 @@
 	    </div>
 		
 		<div class="col-lg-4 col-md-6 col-sm-12">
-			<div class="panel panel-info ">
+			<div class="panel panel-info">
 				<div class="panel-heading clearfix">
 					<h3 class="panel-title pull-left">
 						Border Radius <a href="#" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="The border-radius property is used to add rounded corners to an element."><i class="text-muted fa fa-info-circle" aria-hidden"true"=""></i></a>
@@ -43,6 +46,7 @@
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
+					<a href="#" class="btn btn-default btn-xs copy-btn" data-target="#border-radius-definition" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
 					<pre id="border-radius-definition"></pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">4</sub>
@@ -66,6 +70,7 @@
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
+					<a href="#" class="btn btn-default btn-xs copy-btn" data-target="#box-shadow-definition" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
 					<pre id="box-shadow-definition"></pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">4</sub>
@@ -89,6 +94,7 @@
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
+					<a href="#" class="btn btn-default btn-xs copy-btn" data-target="#box-sizing-definition" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
 					<pre id="box-sizing-definition"></pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">2</sub>
@@ -112,7 +118,8 @@
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
-					<pre>outline: 2px dashed #000000;
+					<a href="#" class="btn btn-default btn-xs copy-btn" data-target="#outline-definition" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
+					<pre id="outline-definition">outline: 2px dashed #000000;
 outline-offset: 1px;</pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">2</sub>
@@ -136,7 +143,8 @@ outline-offset: 1px;</pre>
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
-					<pre>transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(10deg) skewY(10deg);
+					<a href="#" class="btn btn-default btn-xs copy-btn" data-target="#transform-definition" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
+					<pre id="transform-definition">transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(10deg) skewY(10deg);
 -moz-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(10deg) skewY(10deg);
 -webkit-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(10deg) skewY(10deg);
 -o-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(10deg) skewY(10deg);</pre>
@@ -162,7 +170,8 @@ outline-offset: 1px;</pre>
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
-					<pre>transition: all 500ms linear;
+					<a href="#" class="btn btn-default btn-xs copy-btn" data-target="#transition-definition" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
+					<pre id="transition-definition">transition: all 500ms linear;
 -moz-transition: all 500ms linear;
 -webkit-transition: all 500ms linear;
 -ms-transition: all 500ms linear;
@@ -189,7 +198,8 @@ outline-offset: 1px;</pre>
 					<span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
 		        </div>            
 	            <div class="panel-body hidden">
-					<pre>text-shadow: 2px 2px 2px #CCCCCC;</pre>
+					<a href="#" class="btn btn-default btn-xs copy-btn" data-target="#text-shadow-definition" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
+					<pre id="text-shadow-definition">text-shadow: 2px 2px 2px #CCCCCC;</pre>
 					<div class="supported browsers text-right">
 						<i class="fa fa-firefox fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">3.5</sub>
 						<i class="fa fa-chrome fa-fw text-muted" aria-hidden="true"></i><sub class="text-muted">4</sub>
@@ -222,23 +232,13 @@ outline-offset: 1px;</pre>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- bootstrap.min.js -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<!-- main.js -->
-    <script src="assets/js/main.js"></script>
-
+	
 	<script src="assets/js/classes/CssProperty.js"></script>
 	<script src="assets/js/classes/BorderRadius.js"></script>
 	<script src="assets/js/classes/BoxShadow.js"></script>
 	<script src="assets/js/classes/BoxSizing.js"></script>
 
-	<script>
-		var borderRadius = new BorderRadius('4px 4px 4px 4px');
-		$('#border-radius-definition').text(borderRadius.getDefinition());
-
-		var boxShadow = new BoxShadow('1px 4px 14px #878787');
-		$('#box-shadow-definition').text(boxShadow.getDefinition());
-
-		var boxSizing = new BoxSizing('border-box');
-		$('#box-sizing-definition').text(boxSizing.getDefinition());
-	</script>
+	<!-- main.js -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
